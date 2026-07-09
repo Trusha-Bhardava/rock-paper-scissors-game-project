@@ -77,15 +77,15 @@
        let userwin = true;
        if(userchoice === "rock")
        {
-       userwin= compchoice === "paper" ? false : true ;
+       userwin= (compchoice === "paper");  
        }
        else if (userchoice === "paper")
        {
-        userwin = compchoice === "scissor" ?  false : true;
+        userwin = (compchoice === "scissor"); 
        }
        else
        {
-       userwin = compchoice === "rock" ? false : true;
+       userwin = (compchoice === "rock");
        }
        showwinner(userwin);
     }
