@@ -22,7 +22,6 @@
          msg.style.display ="inline";
             msg.style.fontSize = "4rem";
 
-            
  }
   // userwin will be either true or false 
  const showwinner = (userwin) => {
@@ -37,7 +36,8 @@
       msg.style.backgroundColor = "green";
       msg.style.display ="inline";
       msg.style.fontSize = "4rem";
-        
+      // this will be chane sign in both win and lose
+
    }
    else
    {
@@ -47,6 +47,7 @@
       msg.innerHTML ="you lose";
       msg.style.backgroundColor = "red";
       msg.style.display ="inline";
+      msg.style.fontSize = "4rem";
     }
    }
  
@@ -62,7 +63,7 @@
 
 
  // function that takes user choice and start the game
- const playgame = (userchoice) => {
+const playgame = (userchoice) => {
     console.log("user choice = ", userchoice);
     // generate computer choice by calling another function
     const compchoice = generatecompchoice();
